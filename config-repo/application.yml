@@ -1,0 +1,57 @@
+# 总配置，每个环境都一样
+# logging
+logging:
+  config: classpath:wstom-logback.xml
+
+# freemarker
+spring:
+  freemarker:
+    request-context-attribute: request
+    settings:
+      number_format: 0.##
+  servlet:
+    # 上传文件
+    multipart:
+      max-file-size: 1000MB
+      max-request-size: 1000MB
+      file-size-threshold: 10MB
+  # aop
+  aop:
+    auto: true
+  # jackson
+  jackson:
+    time-zone: Asia/Shanghai
+  # cache
+  cache:
+    type: redis
+    redis:
+      time-to-live: 60000
+      cache-null-values: false
+  # hystrix 设置超时时间
+feign:
+  hystrix:
+    enabled: true
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 7220000
+ribbon:
+  ConnectTimeout: 10000
+  ReadTimeout: 3600000
+  # instance
+eureka:
+  instance.prefer-ip-address: true
+
+# swagger
+swagger:
+  version: 1.0.0
+  license: \u0077\u0077\u0077\u002e\u0077\u0073\u0074\u006f\u006d\u002e\u0063\u006e
+  licenseUrl: http://www.wstom.cn
+  termsOfServiceUrl: http://www.wstom.cn
+  contact:
+    name: wstom
+    url: http://www.wstom.cn
+    email: 769601147@qq.com
