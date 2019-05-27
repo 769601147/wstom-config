@@ -1,0 +1,25 @@
+#############################################
+###                                       ###
+###             网关模块-dev               ###
+###                                       ###
+#############################################
+log:
+  info-path: /home/wstom/logs/gateway
+zuul:
+  host:
+    connect-timeout-millis: 1800000
+  # 禁用服务名进行访问
+  ignored-services: '*'
+  routes:
+    callback:
+      path: /callback/**
+      service-id: wstom-service
+      strip-prefix: false
+    system:
+      path: /system/api/**
+      service-id: wstom-service
+      strip-prefix: false
+    user:
+      path: /auth/user/api/**
+      service-id: wstom-service
+      strip-prefix: false

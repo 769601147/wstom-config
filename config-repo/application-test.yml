@@ -1,0 +1,39 @@
+eureka:
+  client:
+    registry-fetch-interval-seconds: 30
+  instance:
+    lease-expiration-duration-in-seconds: 45
+    lease-renewal-interval-in-seconds: 15
+ribbon:
+  eureka:
+    enabled: false
+roncoo-education-course-service:
+  ribbon:
+    listOfServers: http://192.168.1.181:5710
+roncoo-education-system-service:
+  ribbon:
+    listOfServers: http://192.168.1.181:5730
+roncoo-education-user-service:
+  ribbon:
+    listOfServers: http://192.168.1.181:5720
+spring:
+  data:
+    elasticsearch:
+      cluster-name: roncoo_cloud_elk
+      cluster-nodes: 192.168.1.185:9300
+  redis:
+    database: 7
+    host: 192.168.1.85
+    password: RonCoo.123
+    port: 6379
+  servlet:
+    multipart:
+      location: /tmp/education/
+  sleuth:
+    sampler:
+      percentage: 1.0
+  zipkin:
+    base-url: http://192.168.1.181:5781/
+    enabled: true
+    sender:
+      type: web

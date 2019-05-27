@@ -1,0 +1,27 @@
+eureka:
+  client:
+    registry-fetch-interval-seconds: 30
+  instance:
+    lease-expiration-duration-in-seconds: 45
+    lease-renewal-interval-in-seconds: 15
+spring:
+  data:
+    elasticsearch:
+      cluster-name: wstom_cloud_elk
+      cluster-nodes: 192.168.1.185:9300
+  redis:
+    database: 5
+    host: localhost
+    password: 123
+    port: 6379
+  servlet:
+    multipart:
+      location: /usr/wstom/upload/
+  sleuth:
+    sampler:
+      percentage: 1.0
+  zipkin:
+    base-url: http://192.168.1.181:5781/
+    enabled: true
+    sender:
+      type: web
