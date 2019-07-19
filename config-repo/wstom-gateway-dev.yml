@@ -5,3 +5,10 @@
 #############################################
 server:
   port: 8880
+spring:
+  datasource:
+    druid:
+      url: jdbc:mysql://wstom.cn:3306/db_novel?useUnicode=true&characterEncoding=utf-8&useSSL=false
+      username: wstom
+      password: wstom@dev
+      #filters: config
