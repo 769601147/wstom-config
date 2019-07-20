@@ -59,3 +59,10 @@ spring:
         wall:
           config:
             multi-statement-allow: true
+mybatis-plus:
+  type-aliases-package: cn.wstom.gateway
+  mapper-locations: classpath:mapper/**/*Mapper.xml
+  configuration:
+    # 生产环境开启
+    cache-enabled: false
+    default-executor-type: reuse
