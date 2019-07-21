@@ -3,8 +3,8 @@
 ###             网关模块-dev               ###
 ###                                       ###
 #############################################
-log:
-  info-path: /home/wstom/logs/gateway
+logging:
+  info-path: /home/wstom/gateway/logs
 zuul:
   host:
     connect-timeout-millis: 1800000
