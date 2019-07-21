@@ -60,9 +60,9 @@ spring:
           config:
             multi-statement-allow: true
 mybatis-plus:
-  typeAliasesPackage: cn.wstom.user
-  mapperLocations: classpath*:mapper/**/*Mapper.xml
-  executorType: reuse
+  type-aliases-package: cn.wstom.user
+  mapper-locations: classpath*:mapper/**/*Mapper.xml
   configuration:
     # 生产环境开启
-    cacheEnabled: false
+    cache-enabled: false
+    default-executor-type: reuse
