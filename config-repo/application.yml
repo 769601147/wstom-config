@@ -3,12 +3,7 @@
 logging:
   config: classpath:wstom-logback.xml
 
-# freemarker
 spring:
-  freemarker:
-    request-context-attribute: request
-    settings:
-      number_format: 0.##
   servlet:
     # 上传文件
     multipart:
@@ -18,9 +13,6 @@ spring:
   # aop
   aop:
     auto: true
-  # jackson
-  jackson:
-    time-zone: Asia/Shanghai
   # cache
   cache:
     type: redis
