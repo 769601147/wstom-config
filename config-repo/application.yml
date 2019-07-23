@@ -2,12 +2,6 @@
 # logging
 logging:
   config: classpath:wstom-logback.xml
-ribbon:
-  eureka:
-    enabled: false
-wstom-user-api:
-  ribbon:
-    listOfServers: http://localhost:8890
 spring:
   servlet:
     # 上传文件
