@@ -25,9 +25,3 @@ spring:
     enabled: true
     sender:
       type: web
-ribbon:
-  eureka:
-    enabled: false
-wstom-user-api:
-  ribbon:
-    listOfServers: http://localhost:8890
