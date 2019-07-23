@@ -66,3 +66,13 @@ mybatis-plus:
     # 生产环境开启
     cache-enabled: false
     default-executor-type: reuse
+zuul:
+  host:
+    connect-timeout-millis: 1800000
+  # 禁用服务名进行访问
+  ignored-services: '*'
+  routes:
+    member:
+      path: /api/member/**
+      service-id: wstom-member-api
+      strip-prefix: false
