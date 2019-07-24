@@ -71,8 +71,3 @@ zuul:
     connect-timeout-millis: 1800000
   # 禁用服务名进行访问
   ignored-services: *
-  routes:
-    member:
-      path: /member/**
-      service-id: wstom-member-api
-      strip-prefix: false
