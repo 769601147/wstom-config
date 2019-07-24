@@ -34,7 +34,7 @@ ribbon:
   ReadTimeout: 3600000
   eureka:
     enabled: false
-wstom-member-api:
+wstom-user:
   ribbon:
     listOfServers: http://localhost:8890
 # instance
