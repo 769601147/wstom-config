@@ -73,6 +73,6 @@ zuul:
   ignored-services: '*'
   routes:
     member:
-      path: /api/member/**
-      service-id: wstom-user
+      path: /member/**
+      service-id: wstom-member-api
       strip-prefix: false
