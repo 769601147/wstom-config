@@ -74,5 +74,5 @@ zuul:
   routes:
     member:
       path: /api/member/**
-      service-id: wstom-member-api
+      service-id: wstom-user
       strip-prefix: false
