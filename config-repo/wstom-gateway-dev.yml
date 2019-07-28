@@ -72,7 +72,7 @@ zuul:
   # 禁用服务名进行访问
   ignored-services: "*"
   routes:
-    member:
+    wstom-user:
       path: /member/**
       service-id: wstom-user
       strip-prefix: false
