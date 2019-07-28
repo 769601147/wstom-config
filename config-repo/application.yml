@@ -37,6 +37,9 @@ ribbon:
 wstom-user:
   ribbon:
     listOfServers: http://localhost:8890
+wstom-web:
+  ribbon:
+    listOfServers: http://localhost:8080
 # instance
 eureka:
   instance.prefer-ip-address: true
