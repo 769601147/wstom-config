@@ -70,7 +70,6 @@ zuul:
   host:
     connect-timeout-millis: 1800000
   # 禁用服务名进行访问
-  ignored-services: "*"
   routes:
     wstom-web:
       path: /member/**
