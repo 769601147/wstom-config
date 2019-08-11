@@ -69,7 +69,6 @@ mybatis-plus:
 zuul:
   host:
     connect-timeout-millis: 1800000
-  # 禁用服务名进行访问
   routes:
     wstom-web:
       path: /user/**
