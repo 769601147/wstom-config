@@ -84,3 +84,9 @@ mybatis-plus:
     # 生产环境开启
     cache-enabled: false
     default-executor-type: reuse
+management:
+  metrics:
+    web:
+      server:
+        auto-time-requests: false
+
