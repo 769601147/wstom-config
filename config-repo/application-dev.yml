@@ -23,5 +23,9 @@ spring:
     sender:
       type: web
 wstom:
-  switch:
-    dict: true
+  security:
+    oauth2:
+      store-type: redis
+  cache:
+    switch:
+      dict: true
