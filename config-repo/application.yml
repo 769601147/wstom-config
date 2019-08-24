@@ -28,10 +28,10 @@ hystrix:
       execution:
         isolation:
           thread:
-            timeoutInMilliseconds: 7220000
+            timeoutInMilliseconds: 10000
 ribbon:
-  ConnectTimeout: 10000
-  ReadTimeout: 3600000
+  ConnectTimeout: 5000
+  ReadTimeout: 5000
 # instance
 eureka:
   instance.prefer-ip-address: true
