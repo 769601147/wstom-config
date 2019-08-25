@@ -36,7 +36,8 @@ ribbon:
   ReadTimeout: 5000
 # instance
 eureka:
-  instance.prefer-ip-address: true
+  instance:
+    prefer-ip-address: true
 # swagger
 swagger:
   version: 1.0.0
