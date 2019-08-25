@@ -25,7 +25,7 @@ spring:
 wstom:
   security:
     oauth2:
-      store-type: redis
+      store-type: jwt
   cache:
     switch:
       dict: true
