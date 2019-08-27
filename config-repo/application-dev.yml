@@ -22,10 +22,6 @@ spring:
     enabled: true
     sender:
       type: web
-security:
-  oauth2:
-    resource:
-      filter-order: 1
 wstom:
   security:
     oauth2:
