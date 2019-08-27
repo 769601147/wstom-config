@@ -25,7 +25,7 @@ spring:
 security:
   oauth2:
     resource:
-      filter-order: 3
+      filter-order: 1
 wstom:
   security:
     oauth2:
