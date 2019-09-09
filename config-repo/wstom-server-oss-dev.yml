@@ -66,3 +66,18 @@ mybatis-plus:
     # 生产环境开启
     cache-enabled: false
     default-executor-type: reuse
+wstom:
+  server:
+    oss:
+      config:
+        login-page: /login
+        deny-page: /deny
+        remember-me:
+          # 记住我 24小时
+          expire-time: 24 * 60 * 60
+          # 使用jdbc持久化 记住我信息
+          token-repository: jdbc # memory
+        permit-url:
+          - /imgs/**
+          - /secript/**
+          - /styles/**
