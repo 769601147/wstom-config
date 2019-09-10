@@ -89,3 +89,12 @@ security:
     resource:
       jwt:
         keyUri: http://wstom-server-oss/oauth/token_key
+wstom:
+  server:
+    security:
+      config:
+        denied-page: /deny
+        permit-url:
+          - /open/api
+#        open-url:
+        logout-success-url: /handle/logout
