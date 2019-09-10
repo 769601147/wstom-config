@@ -81,8 +81,8 @@ security:
   sessions: ALWAYS
   oauth2:
     client:
-      clientId: ssoclient
-      clientSecret: ssosecret
+      clientId: wstom_id
+      clientSecret: $2a$10$CfqUORO74rB9THlcAE5AV.Xt6qFLkqCH2P0dOmp2Aw3BAA11RvgoG
       accessTokenUri: http://localhost:8996/oauth/token
       userAuthorizationUri: http://localhost:8996/oauth/authorize
       clientAuthenticationScheme: form
