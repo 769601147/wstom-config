@@ -83,12 +83,12 @@ security:
     client:
       clientId: ssoclient
       clientSecret: ssosecret
-      accessTokenUri: http://wstom-server-oss/oauth/token
-      userAuthorizationUri: http://wstom-server-oss/oauth/authorize
+      accessTokenUri: http://localhost:8996/oauth/token
+      userAuthorizationUri: http://localhost:8996/oauth/authorize
       clientAuthenticationScheme: form
     resource:
       jwt:
-        keyUri: http://wstom-server-oss/oauth/token_key
+        keyUri: http://localhost:8996/oauth/token_key
 wstom:
   server:
     security:
