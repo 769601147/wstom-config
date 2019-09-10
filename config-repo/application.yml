@@ -18,7 +18,12 @@ spring:
     redis:
       time-to-live: 60000
       cache-null-values: false
-  # hystrix 设置超时时间
+  devtools:
+    restart:
+      enabled: false
+    livereload:
+      enabled: false
+# hystrix 设置超时时间
 feign:
   hystrix:
     enabled: true

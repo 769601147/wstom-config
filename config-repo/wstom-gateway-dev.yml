@@ -6,6 +6,8 @@
 server:
   port: 8080
 spring:
+  profiles:
+    include:
   redis:
     database: 5
     host: localhost
@@ -69,8 +71,21 @@ mybatis-plus:
 zuul:
   host:
     connect-timeout-millis: 1800000
-  routes:
-    wstom-web:
-      path: /user/**
-      service-id: wstom-web
-      strip-prefix: true
+#  routes:
+#    wstom-web:
+#      path: /user/**
+#      service-id: wstom-web
+#      strip-prefix: true
+security:
+  ignored: /favicon.ico,/scripts/**,/styles/**,/images/**,/webjars/**
+  sessions: ALWAYS
+  oauth2:
+    client:
+      clientId: ssoclient
+      clientSecret: ssosecret
+      accessTokenUri: http://wstom-server-oss/oauth/token
+      userAuthorizationUri: http://wstom-server-oss/oauth/authorize
+      clientAuthenticationScheme: form
+    resource:
+      jwt:
+        keyUri: http://wstom-server-oss/oauth/token_key
