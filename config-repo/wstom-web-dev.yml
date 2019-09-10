@@ -65,3 +65,25 @@ spring:
         wall:
           config:
             multi-statement-allow: true
+security:
+  ignored: /favicon.ico,/scripts/**,/styles/**,/images/**,/webjars/**
+  sessions: ALWAYS
+  oauth2:
+    client:
+      clientId: wstom_id
+      clientSecret: $2a$10$CfqUORO74rB9THlcAE5AV.Xt6qFLkqCH2P0dOmp2Aw3BAA11RvgoG
+      accessTokenUri: http://localhost:8996/oauth/token
+      userAuthorizationUri: http://localhost:8996/oauth/authorize
+      clientAuthenticationScheme: form
+    resource:
+      jwt:
+        keyUri: http://localhost:8996/oauth/token_key
+wstom:
+  server:
+    security:
+      config:
+        denied-page: /deny
+        permit-url:
+          - /open/api
+        #        open-url:
+        logout-success-url: /handle/logout
