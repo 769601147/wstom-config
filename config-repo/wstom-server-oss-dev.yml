@@ -73,8 +73,8 @@ wstom:
         login-page: /login
         deny-page: /deny
         remember-me:
-          # 记住我 24小时
-          expire-time: 24 * 60 * 60
+          # 记住我 24小时 24 * 60 * 60
+          expire-time: 86400
           # 使用jdbc持久化 记住我信息
           token-repository: jdbc # memory
         permit-url:
