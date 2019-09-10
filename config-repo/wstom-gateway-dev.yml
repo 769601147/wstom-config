@@ -71,11 +71,11 @@ mybatis-plus:
 zuul:
   host:
     connect-timeout-millis: 1800000
-#  routes:
-#    wstom-web:
-#      path: /user/**
-#      service-id: wstom-web
-#      strip-prefix: true
+  routes:
+    wstom-web:
+      path: /web/**
+      service-id: wstom-web
+      strip-prefix: true
 security:
   ignored: /favicon.ico,/scripts/**,/styles/**,/images/**,/webjars/**
   sessions: ALWAYS
