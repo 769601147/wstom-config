@@ -4,4 +4,4 @@
 ###                                       ###
 #############################################
 logging:
-  info-path: /home/wstom/gateway/logs
+  info-path: /home/wstom/server/gateway/logs
