@@ -81,20 +81,21 @@ security:
   sessions: ALWAYS
   oauth2:
     client:
-      clientId: wstom_id
-      clientSecret: $2a$10$CfqUORO74rB9THlcAE5AV.Xt6qFLkqCH2P0dOmp2Aw3BAA11RvgoG
-      accessTokenUri: http://localhost:8996/oauth/token
-      userAuthorizationUri: http://localhost:8996/oauth/authorize
-      clientAuthenticationScheme: form
+      client-id: wstom_id
+      client-secret: $2a$10$CfqUORO74rB9THlcAE5AV.Xt6qFLkqCH2P0dOmp2Aw3BAA11RvgoG
+      access-token-uri: ${wstom.server.security.config.auth-server}/oauth/token
+      user-authorization-uri: ${wstom.server.security.config.auth-server}/oauth/authorize
+    #      clientAuthenticationScheme: form
     resource:
       jwt:
-        keyUri: http://localhost:8996/oauth/token_key
+        key-uri: ${wstom.server.security.config.auth-server}/oauth/token_key
 wstom:
   server:
     security:
       config:
+        auth-server: http://localhost:8996
         denied-page: /deny
         permit-url:
           - /open/api
-#        open-url:
+        #        open-url:
         logout-success-url: /handle/logout
