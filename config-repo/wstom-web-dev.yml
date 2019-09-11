@@ -82,10 +82,8 @@ wstom:
   server:
     security:
       config:
-        denied-page: /deny1
+        denied-page: /deny
         permit-url:
           - /open/api
-          - /test/api
-        open-url:
-          - /tmp/api
+        #        open-url:
         logout-success-url: /handle/logout
