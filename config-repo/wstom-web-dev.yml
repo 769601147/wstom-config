@@ -65,6 +65,16 @@ spring:
         wall:
           config:
             multi-statement-allow: true
+wstom:
+  server:
+    security:
+      config:
+        auth-server: http://localhost:8996
+        denied-page: /deny
+        permit-url:
+          - /open/api
+        #        open-url:
+        logout-success-url: /handle/logout
 security:
   ignored: /favicon.ico,/scripts/**,/styles/**,/images/**,/webjars/**
   sessions: ALWAYS
@@ -78,13 +88,3 @@ security:
     resource:
       jwt:
         key-uri: ${wstom.server.security.config.auth-server}/oauth/token_key
-wstom:
-  server:
-    security:
-      config:
-        auth-server: http://localhost:8996
-        denied-page: /deny
-        permit-url:
-          - /open/api
-        #        open-url:
-        logout-success-url: /handle/logout
