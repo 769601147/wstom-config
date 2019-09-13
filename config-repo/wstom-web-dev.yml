@@ -77,7 +77,7 @@ wstom:
         logout-success-url: /handle/logout
 security:
   ignored: /favicon.ico,/scripts/**,/styles/**,/images/**,/webjars/**
-#  sessions: ALWAYS
+  sessions: ALWAYS
   oauth2:
     client:
       client-id: wstom_id
