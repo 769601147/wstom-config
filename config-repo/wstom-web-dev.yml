@@ -6,9 +6,7 @@
 server:
   port: 8898
   servlet:
-    session:
-      cookie:
-        name: OAUTH2SESSION
+    context-path: /auth
 spring:
   zipkin:
     base-url: wstom-server-zipkin
