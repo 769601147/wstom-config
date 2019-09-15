@@ -5,8 +5,6 @@
 #############################################
 server:
   port: 8898
-  servlet:
-    context-path: /auth
 spring:
   zipkin:
     base-url: wstom-server-zipkin
@@ -84,8 +82,8 @@ security:
     client:
       client-id: wstom
       client-secret: 123456
-      access-token-uri: ${wstom.server.security.config.auth-server}/oauth/token
-      user-authorization-uri: ${wstom.server.security.config.auth-server}/oauth/authorize
+      access-token-uri: ${wstom.server.security.config.auth-server}/auth/oauth/token
+      user-authorization-uri: ${wstom.server.security.config.auth-server}/auth/oauth/authorize
 #      clientAuthenticationScheme: form
     resource:
       jwt:

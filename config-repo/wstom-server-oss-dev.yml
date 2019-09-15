@@ -5,6 +5,8 @@
 #############################################
 server:
   port: 8996
+  servlet:
+    context-path: /auth
 spring:
   redis:
     database: 5
