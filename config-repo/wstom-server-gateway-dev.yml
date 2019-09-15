@@ -77,8 +77,8 @@ zuul:
       service-id: wstom-web
       strip-prefix: true
 security:
-  ignored: /favicon.ico,/scripts/**,/styles/**,/images/**,/webjars/**
-  sessions: ALWAYS
+#  ignored: /favicon.ico,/scripts/**,/styles/**,/images/**,/webjars/**
+#  sessions: ALWAYS
   oauth2:
     client:
       client-id: wstom_id
