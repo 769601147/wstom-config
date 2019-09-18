@@ -87,4 +87,4 @@ security:
 #      clientAuthenticationScheme: form
     resource:
       jwt:
-        key-uri: ${wstom.server.security.config.auth-server}/oauth/token_key
+        key-uri: ${wstom.server.security.config.auth-server}/auth/oauth/token_key
