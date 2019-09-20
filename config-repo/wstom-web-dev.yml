@@ -76,15 +76,14 @@ wstom:
         #        open-url:
         logout-success-url: /handle/logout
 security:
-#  ignored: /favicon.ico,/scripts/**,/styles/**,/images/**,/webjars/**
-#  sessions: ALWAYS
+  #  ignored: /favicon.ico,/scripts/**,/styles/**,/images/**,/webjars/**
+  #  sessions: ALWAYS
   oauth2:
     client:
-      client-id: wstom
-      client-secret: 123456
-      access-token-uri: ${wstom.server.security.config.auth-server}/auth/oauth/token
-      user-authorization-uri: ${wstom.server.security.config.auth-server}/auth/oauth/authorize
-#      clientAuthenticationScheme: form
+      client-id: wstom_id
+      client-secret: $2a$10$CfqUORO74rB9THlcAE5AV.Xt6qFLkqCH2P0dOmp2Aw3BAA11RvgoG
+      access-token-uri: ${wstom.server.security.config.auth-server}/oauth/token
+      user-authorization-uri: ${wstom.server.security.config.auth-server}/oauth/authorize
     resource:
       jwt:
-        key-uri: ${wstom.server.security.config.auth-server}/auth/oauth/token_key
+        key-uri: ${wstom.server.security.config.auth-server}/oauth/token_key
