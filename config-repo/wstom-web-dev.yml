@@ -70,7 +70,7 @@ security:
   #  sessions: ALWAYS
   oauth2:
     client:
-      client-id: wstom_id
+      client-id: wstom
       client-secret: $2a$10$CfqUORO74rB9THlcAE5AV.Xt6qFLkqCH2P0dOmp2Aw3BAA11RvgoG
       access-token-uri: ${wstom.server.security.config.auth-server}/oauth/oauth/token
       user-authorization-uri: ${wstom.server.security.config.auth-server}/auth/oauth/authorize
