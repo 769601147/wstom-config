@@ -82,7 +82,7 @@ security:
   oauth2:
     client:
       client-id: wstom
-      client-secret: $2a$10$CfqUORO74rB9THlcAE5AV.Xt6qFLkqCH2P0dOmp2Aw3BAA11RvgoG
+      client-secret: 123456
       access-token-uri: ${wstom.server.security.config.auth-server}/auth/oauth/token
       user-authorization-uri: ${wstom.server.security.config.auth-server}/auth/oauth/authorize
     #      clientAuthenticationScheme: form
