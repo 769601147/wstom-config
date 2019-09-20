@@ -72,12 +72,12 @@ security:
     client:
       client-id: wstom_id
       client-secret: $2a$10$CfqUORO74rB9THlcAE5AV.Xt6qFLkqCH2P0dOmp2Aw3BAA11RvgoG
-      access-token-uri: ${wstom.server.security.config.auth-server}/oauth/token
-      user-authorization-uri: ${wstom.server.security.config.auth-server}/auth/authorize
+      access-token-uri: ${wstom.server.security.config.auth-server}/oauth/oauth/token
+      user-authorization-uri: ${wstom.server.security.config.auth-server}/auth/oauth/authorize
     #      clientAuthenticationScheme: form
     resource:
       jwt:
-        key-uri: ${wstom.server.security.config.auth-server}/auth/token_key
+        key-uri: ${wstom.server.security.config.auth-server}/auth/oauth/token_key
 wstom:
   server:
     security:
